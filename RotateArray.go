@@ -3,7 +3,7 @@ package dsastringsarrays
 func RotateArray(nums []int, k int) []int {
 	n := len(nums) - 1
 	k = k % n
-	if k == 0 {
+	if n == 0 {
 		return nums
 	}
 	Rotate(nums, 0, n)
