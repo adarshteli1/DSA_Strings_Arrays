@@ -7,7 +7,7 @@ func FindNumbersDisappearedInArray(nums []int) []int {
 			val = -val
 		}
 		index := val - 1
-		for nums[index] > 0 {
+		if nums[index] > 0 {
 			nums[index] = -nums[index]
 		}
 	}
